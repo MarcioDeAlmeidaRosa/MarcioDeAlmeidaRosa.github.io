@@ -229,7 +229,8 @@ a {
 
 a:hover,
 a:focus,
-.header-principal nav ul li a:hover {
+.header-principal nav ul li a:hover,
+.header-principal nav ul li a:focus {
     color: #f60;
     text-decoration: underline;
 }

@@ -85,7 +85,7 @@ body p {
 
 .header-principal,
 .footer,
-.boletin-nota {
+.boletim-nota {
     background-color: #000;
     background-color: rgba(0, 0, 0.8);
     background: linear-gradient(to bottom right, black, rgba(211, 211, 211, .3));

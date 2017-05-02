@@ -1,6 +1,7 @@
 /*Início da solução para centralizar verticalmente conteúdo em uma div*/
 
-.conteudo>p::first-letter {
+section p:first-child::first-letter,
+.first_l::first-letter {
     font-size: 2em;
     margin-right: .1ch;
 }
@@ -102,22 +103,29 @@
 figure img {
     max-width: 100%;
     -moz-transition: all 1.0s;
+    -o-transition: all 1.0s;
     -webkit-transition: all 1.0s;
+    -ms-transition: all 1.0s;
     transition: all 1.0s;
 }
 
 
 /*ativando o zoom das imagens*/
 
-figure:hover img {
-    /*da efeito esfumaçado na imagem*/
-    box-shadow: 0px 0px 9.375em #000000;
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(3.0);
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(3.0);
+figure:hover img,
+figure:focus img {
+    box-shadow: 0 0 0 99999px rgba(0, 0, 0, .3);
+    transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
     transition: all 200ms ease-in;
-    transform: scale(3.0);
+    -moz-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -webkit-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    z-index: 99999;
 }
 
 
@@ -136,6 +144,4 @@ figure {
 
 .local-img {
     width: 100%;
-    /*configura a prioridade da imagem*/
-    z-index: 2;
 }

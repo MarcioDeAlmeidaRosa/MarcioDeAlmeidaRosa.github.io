@@ -1,15 +1,15 @@
-section {
+sectiom {
     overflow: auto;
 }
 
-.boletin-nota {
+.boletim-nota {
     font-family: 'Josefin Sans', sans-serif;
     font-size: .6em;
     empty-cells: show;
     border: 1px solid #000;
 }
 
-.boletin-nota>caption {
+.boletim-nota>caption {
     text-align: left;
     font-weight: bold;
     font-size: 2em;
@@ -20,13 +20,13 @@ section {
 
 /* basic shared rules */
 
-.boletin-nota th,
-.boletin-nota td {
+.boletim-nota th,
+.boletim-nota td {
     text-align: center;
     padding-right: .5em;
 }
 
-.boletin-nota th {
+.boletim-nota th {
     font-weight: bold;
     padding-left: .5em;
 }
@@ -34,13 +34,13 @@ section {
 
 /* header */
 
-.boletin-nota>thead>tr:first-child>th,
-.boletin-nota>thead>tr:nth-child(2)>th {
+.boletim-nota>thead>tr:first-child>th,
+.boletim-nota>thead>tr:nth-child(2)>th {
     text-align: center;
     color: #FFF;
 }
 
-.boletin-nota>thead>tr+tr>th {
+.boletim-nota>thead>tr+tr>th {
     font-style: italic;
     color: gray;
     border: 1px solid black;
@@ -49,14 +49,14 @@ section {
 
 /* fix size of superscript */
 
-.boletin-nota sup {
+.boletim-nota sup {
     font-size: 75%;
 }
 
 
 /* body */
 
-.boletin-nota td {
+.boletim-nota td {
     background-color: #FFF;
     padding: .5em .5em .5em 3em;
 }
@@ -64,19 +64,19 @@ section {
 
 /* footer */
 
-.boletin-nota tfoot {
+.boletim-nota tfoot {
     font-weight: bold;
 }
 
-.boletin-nota tfoot th {
+.boletim-nota tfoot th {
     text-align: center;
     color: #FFF;
 }
 
-.boletin-nota tfoot th:after {
+.boletim-nota tfoot th:after {
     content: "";
 }
 
-.boletin-nota>tfoot td {
+.boletim-nota>tfoot td {
     background-color: #FFFAFA;
 }

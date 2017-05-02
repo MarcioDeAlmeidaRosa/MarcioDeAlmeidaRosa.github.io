@@ -1,102 +1,15 @@
-/*Início da solução para centralizar verticalmente conteúdo em uma div*/
-
-section p:first-child::first-letter,
-.first_l::first-letter {
-    font-size: 2em;
+section p:first-child::first-letter{
+    font-size: 4em;
     margin-right: .1ch;
 }
 
-.container {
-    width: 100%;
-    height: 18.750em;
-    position: relative;
-    display: table;
-}
-
-.container p {
-    *position: absolute;
-    top: 50%;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: justify;
-    line-height: 1.9;
-}
-
-.container figure {
-    *position: absolute;
-    top: 50%;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-}
-
-.container span {
-    display: block;
-    *position: relative;
-    top: -50%;
-}
-
-
-/*Fim da solução para centralizar verticalmente conteúdo em uma div*/
-
-.texto-meu-sonho {
-    float: left;
-    width: 60%;
-}
-
-.imagem-meu-sonho {
+.imagem-direita {
     float: right;
-    width: 35%;
 }
 
-.imagem-novos-horizontes-gilhotina {
+.imagem-esquerda {
     float: left;
-    width: 35%;
 }
-
-.texto-novos-horizontes-gilhotina {
-    float: right;
-    width: 60%;
-}
-
-.imagem-novos-horizontes-dobradeira {
-    float: left;
-    width: 35%;
-    clear: both;
-}
-
-.texto-novos-horizontes-dobradeira {
-    float: left;
-    width: 30%;
-}
-
-.imagem-novos-horizontes-tipografia {
-    float: right;
-    width: 35%;
-}
-
-.texto-novos-horizontes-offset {
-    float: left;
-    width: 60%;
-    clear: both;
-}
-
-.imagem-novos-horizontes-offset {
-    float: right;
-    width: 35%;
-}
-
-.imagem-novos-horizontes-solna {
-    float: left;
-    width: 35%;
-    clear: both;
-}
-
-.texto-novos-horizontes-solna {
-    float: right;
-    width: 60%;
-}
-
 
 /*configurando tempo de abertura de imagem e tamanho máximo para dar o efeito zoom*/
 
@@ -132,11 +45,10 @@ figure:focus img {
 /*configurando tamanho de todas as figuras*/
 
 figure {
-    width: 50%;
+    width: 100%;
     text-align: center;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 1em;
+    /*margin: 0;
+    padding: 0;*/
 }
 
 
@@ -144,4 +56,9 @@ figure {
 
 .local-img {
     width: 100%;
+}
+
+.local-img img{
+    margin: 10px;
+    max-width: 300px;
 }

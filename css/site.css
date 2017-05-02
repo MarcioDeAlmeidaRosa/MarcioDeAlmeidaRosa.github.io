@@ -55,7 +55,7 @@ body p {
     margin-right: auto;
     text-align: center;
     width: 80%;
-    /*max-width: 1620px;*/
+    max-width: 1620px;
     margin-top: 6.875em;
     margin-bottom: 3.750em;
 }
@@ -84,7 +84,6 @@ body p {
 }
 
 .header-principal {
-    box-sizing: border-box;
     border: 0.200em solid #000;
     width: 98%;
     height: 6.250em;
@@ -97,7 +96,6 @@ body p {
     top: 0;
     left: 50%;
     transform: translate(-50%);
-    /*box-shadow: 4px 4px 25px 10px rgba(0, 0, 0, 0.75);*/
     color: white;
 }
 
@@ -108,7 +106,6 @@ body p {
     float: left;
     display: block;
     width: 50%;
-    box-sizing: border-box;
     font-family: 'Baloo', cursive;
 }
 
@@ -116,7 +113,6 @@ body p {
     float: right;
     display: block;
     width: 50%;
-    box-sizing: border-box;
     text-align: right;
     padding-right: 1.875em;
 }
@@ -153,12 +149,10 @@ a {
     left: 0;
     width: 100%;
     height: 3.125em;
-    box-sizing: border-box;
     color: white;
 }
 
 .footer-register {
-    box-sizing: border-box;
     float: left;
     width: 18.750em;
     text-align: center;
@@ -167,7 +161,6 @@ a {
 }
 
 .footer-social {
-    box-sizing: border-box;
     float: right;
     width: 18.750em;
     display: block;

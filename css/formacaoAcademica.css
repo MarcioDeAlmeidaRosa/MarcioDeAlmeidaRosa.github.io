@@ -1,3 +1,7 @@
+section {
+    overflow: auto;
+}
+
 .boletin-nota {
     font-family: 'Josefin Sans', sans-serif;
     font-size: .6em;

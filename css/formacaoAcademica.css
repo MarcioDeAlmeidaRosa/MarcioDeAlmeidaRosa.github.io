@@ -1,0 +1,78 @@
+.boletin-nota {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: .6em;
+    empty-cells: show;
+    border: 1px solid #000;
+}
+
+.boletin-nota>caption {
+    text-align: left;
+    font-weight: bold;
+    font-size: 2em;
+    border-bottom: .2em solid rgba(0, 0, 0.8);
+    margin-bottom: .5em;
+}
+
+
+/* basic shared rules */
+
+.boletin-nota th,
+.boletin-nota td {
+    text-align: center;
+    padding-right: .5em;
+}
+
+.boletin-nota th {
+    font-weight: bold;
+    padding-left: .5em;
+}
+
+
+/* header */
+
+.boletin-nota>thead>tr:first-child>th,
+.boletin-nota>thead>tr:nth-child(2)>th {
+    text-align: center;
+    color: #FFF;
+}
+
+.boletin-nota>thead>tr+tr>th {
+    font-style: italic;
+    color: gray;
+    border: 1px solid black;
+}
+
+
+/* fix size of superscript */
+
+.boletin-nota sup {
+    font-size: 75%;
+}
+
+
+/* body */
+
+.boletin-nota td {
+    background-color: #FFF;
+    padding: .5em .5em .5em 3em;
+}
+
+
+/* footer */
+
+.boletin-nota tfoot {
+    font-weight: bold;
+}
+
+.boletin-nota tfoot th {
+    text-align: center;
+    color: #FFF;
+}
+
+.boletin-nota tfoot th:after {
+    content: "";
+}
+
+.boletin-nota>tfoot td {
+    background-color: #FFFAFA;
+}

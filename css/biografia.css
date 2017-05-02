@@ -1,4 +1,4 @@
-section p:first-child::first-letter{
+section p:first-child::first-letter {
     font-size: 4em;
     margin-right: .1ch;
 }
@@ -10,6 +10,7 @@ section p:first-child::first-letter{
 .imagem-esquerda {
     float: left;
 }
+
 
 /*configurando tempo de abertura de imagem e tamanho máximo para dar o efeito zoom*/
 
@@ -58,7 +59,7 @@ figure {
     width: 100%;
 }
 
-.local-img img{
+.local-img img {
     margin: 10px;
     max-width: 300px;
 }

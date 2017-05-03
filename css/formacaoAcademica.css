@@ -2,9 +2,24 @@ sectiom {
     overflow: auto;
 }
 
-.ano-boletim-formacao:hover+.boletim-nota {
+li~li {
+    margin-top: 1em;
+}
+
+.ano-boletim-formacao:hover+.boletim-nota,
+.ano-boletim-formacao:focus+.boletim-nota {
     display: block;
 }
+
+.boletim-nota:hover,
+.boletim-nota:focus {
+    display: block;
+}
+
+
+/*.boletim-nota::before {
+    background: 
+}*/
 
 .boletim-nota {
     font-family: 'Josefin Sans', sans-serif;

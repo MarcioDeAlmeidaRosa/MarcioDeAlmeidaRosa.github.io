@@ -252,3 +252,43 @@ a:focus,
     color: #f60;
     text-decoration: underline;
 }
+
+.icones-redes-sociais a:hover,
+.icones-redes-sociais a:focus {
+    position: relative;
+}
+
+.icones-redes-sociais a:hover::before,
+.icones-redes-sociais a:focus::before {
+    content: attr(data-toolTip);
+    color: black;
+    position: absolute;
+    text-align: center;
+    background-color: #FFF;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-indent: 0;
+    width: 12em;
+    height: 5em;
+    bottom: 150%;
+    right: 0;
+    text-indent: 0;
+    line-height: 2;
+    font-size: .75em;
+    z-index: 999;
+}
+
+.icones-redes-sociais a:hover::after,
+.icones-redes-sociais a:focus::after {
+    content: "";
+    width: 2em;
+    height: 2em;
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+    background-color: #FFF;
+    position: absolute;
+    transform: rotate(45deg);
+    top: -94%;
+    right: 22%;
+    z-index: 9999;
+}

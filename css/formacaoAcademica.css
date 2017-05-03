@@ -16,17 +16,30 @@ li~li {
     display: block;
 }
 
+.ano-boletim-formacao:hover::after+.boletim-nota,
+.ano-boletim-formacao:focus::after+.boletim-nota {
+    display: block;
+}
 
-/*.boletim-nota::before {
-    background: 
-}*/
+.ano-boletim-formacao:hover::after,
+.ano-boletim-formacao:focus::after {
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    width: 6em;
+    height: 9em;
+}
 
 .boletim-nota {
+    margin-top: 2em;
     font-family: 'Josefin Sans', sans-serif;
     font-size: .6em;
     empty-cells: show;
     border: 1px solid #000;
     display: none;
+    z-index: 9999;
 }
 
 .boletim-nota>caption {

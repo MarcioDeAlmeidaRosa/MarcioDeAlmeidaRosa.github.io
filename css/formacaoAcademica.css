@@ -2,7 +2,7 @@ sectiom {
     overflow: auto;
 }
 
-li~li {
+li {
     margin-top: 1em;
 }
 
@@ -21,15 +21,19 @@ li~li {
     display: block;
 }
 
+a {
+    position: relative;
+}
+
 .ano-boletim-formacao:hover::after,
 .ano-boletim-formacao:focus::after {
     content: "";
     background-color: transparent;
     position: absolute;
-    top: 5%;
+    top: 6%;
     left: 0%;
-    width: 6em;
-    height: 9em;
+    width: 200px;
+    height: 200px;
 }
 
 .boletim-nota {

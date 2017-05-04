@@ -1,5 +1,5 @@
 section p:first-child::first-letter {
-    font-size: 4em;
+    font-size: 2em;
     margin-right: .1ch;
 }
 
@@ -11,11 +11,15 @@ section p:first-child::first-letter {
     float: left;
 }
 
+.imagem-esquerda figure,
+.imagem-direita figure {
+    width: 326px;
+}
+
 
 /*configurando tempo de abertura de imagem e tamanho máximo para dar o efeito zoom*/
 
 figure img {
-    max-width: 100%;
     -moz-transition: all 1.0s;
     -o-transition: all 1.0s;
     -webkit-transition: all 1.0s;
@@ -29,11 +33,11 @@ figure img {
 figure:hover img,
 figure:focus img {
     box-shadow: 0 0 0 99999px rgba(0, 0, 0, .3);
-    transform: scale(1.2);
     -moz-transform: scale(1.2);
     -o-transform: scale(1.2);
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
+    transform: scale(1.2);
     transition: all 200ms ease-in;
     -moz-transition: all 200ms ease-in;
     -o-transition: all 200ms ease-in;
@@ -48,18 +52,12 @@ figure:focus img {
 figure {
     width: 100%;
     text-align: center;
-    /*margin: 0;
-    padding: 0;*/
 }
 
 
 /*configuração do local onde vai a imagem*/
 
-.local-img {
-    width: 100%;
-}
-
 .local-img img {
     margin: 10px;
-    max-width: 300px;
+    width: inherit;
 }

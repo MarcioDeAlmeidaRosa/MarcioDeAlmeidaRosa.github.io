@@ -13,22 +13,23 @@
     <h2 class="borda-eslilizada-1">Contato</h2>
     <form>
         <fieldset>
-            <legend>Dados do Contato</legend>
+            <legend><label for="nome">Dados do Contato</label></legend>
             <label for="nome">Nome</label>
             <input type="text" name="nome" id="nome" autofocus required>
             <label for="email">E-mail</label>
             <input type="email" name="email" id="email" required>
         </fieldset>
         <fieldset>
-            <legend>Assunto</legend>
-            <label><input type="radio" name="assunto" id="servico" value="servico" checked > Serviço</label>
-            <label><input type="radio" name="assunto" id="blog" value="blog" > Blog</label>
+            <legend><label for="servico">Assunto</label></legend>
+            <label><input type="radio" name="assunto" id="servico" value="Servico" checked > Serviço</label>
+            <label><input type="radio" name="assunto" id="blog" value="Blog" > Blog</label>
             <fieldset>
-                <label><input type="radio" name="assunto" id="outro" value="outro" > Outro</label>
+                <input type="radio" name="assunto" value="Outro" id="outro">
+                <label for="outro"> Outro</label>
                 <input type="text" name="outro-assunto" id="outro-assunto">
             </fieldset>
-            <label for="nome">Mensagem</label>
-            <textarea rows="4" cols="4"></textarea>
+            <label for="mensagem">Mensagem</label>
+            <textarea rows="4" cols="4" name="mensagem" id="mensagem" required></textarea>
         </fieldset>
         <button type="submit">Enviar mensagem</button>
     </form>

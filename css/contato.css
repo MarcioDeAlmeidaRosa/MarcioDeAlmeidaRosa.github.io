@@ -6,22 +6,51 @@
 
 .contato fieldset>fieldset {
     display: inline;
+    border: 0;
 }
 
-input[name="nome"],
-input[name="email"],
-textarea {
-    display: block;
+.contato input[name="nome"],
+.contato input[name="email"],
+.contato textarea {
     width: 100%;
 }
 
-textarea {
+.contato label[for="nome"],
+.contato label[for="email"],
+.contato label[for="mensagem"] {
+    display: block;
+}
+
+.contato textarea {
     resize: none;
 }
 
-button[type="submit"] {
+.contato button[type="submit"] {
     position: absolute;
     right: 0;
     margin: 5px 0;
     font: inherit;
+}
+
+.contato input[name="nome"]:invalid,
+.contato input[name="email"]:invalid,
+.contato textarea:invalid {
+    box-shadow: 0 0 0 1px rgb(250, 128, 114);
+}
+
+.contato input[type="text"]:focus,
+.contato input[type="text"]:hover,
+.contato input[type="email"]:focus,
+.contato input[type="email"]:hover,
+.contato textarea:focus,
+.contato textarea:hover {
+    background-color: rgb(240, 230, 140);
+}
+
+.contato input[value="Outro"]~input {
+    display: none;
+}
+
+.contato input[value="Outro"]:checked~input {
+    display: inline;
 }

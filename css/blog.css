@@ -1,9 +1,9 @@
-.home figure {
+.blog figure {
     text-align: center;
     margin: auto;
 }
 
-.home img {
+.blog img {
     margin: 30px;
     border-radius: 180px;
     box-shadow: 1px 10px 100px black;

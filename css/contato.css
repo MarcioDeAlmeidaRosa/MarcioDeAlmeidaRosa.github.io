@@ -1,6 +1,27 @@
-.contato {}
-
-.form-contato {
+.contato form {
+    position: relative;
     margin: auto;
-    width: 50%;
+    width: 60%;
+}
+
+.contato fieldset>fieldset {
+    display: inline;
+}
+
+input[name="nome"],
+input[name="email"],
+textarea {
+    display: block;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+button[type="submit"] {
+    position: absolute;
+    right: 0;
+    margin: 5px 0;
+    font: inherit;
 }

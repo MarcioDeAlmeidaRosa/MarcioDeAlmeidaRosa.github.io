@@ -6,25 +6,31 @@
     <title>Envie o Marcio de Almeida Rosa</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/site.css">
-    <link rel="stylesheet" type="text/css" href="contato.css">
+    <link rel="stylesheet" type="text/css" href="css/contato.css">
 </head>
 
 <body class="conteudo contato">
     <h2 class="borda-eslilizada-1">Contato</h2>
-    <form class="form-contato">
+    <form>
         <fieldset>
             <legend>Dados do Contato</legend>
             <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome" autofocus>
+            <input type="text" name="nome" id="nome" autofocus required>
             <label for="email">E-mail</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" required>
         </fieldset>
         <fieldset>
             <legend>Assunto</legend>
-            <label><input type="radio" name="assunto" id="servico" value="servico" > Serviço</label>
+            <label><input type="radio" name="assunto" id="servico" value="servico" checked > Serviço</label>
             <label><input type="radio" name="assunto" id="blog" value="blog" > Blog</label>
-            <label><input type="radio" name="assunto" id="outro" value="outro" > Outro</label>
+            <fieldset>
+                <label><input type="radio" name="assunto" id="outro" value="outro" > Outro</label>
+                <input type="text" name="outro-assunto" id="outro-assunto">
+            </fieldset>
+            <label for="nome">Mensagem</label>
+            <textarea rows="4" cols="4"></textarea>
         </fieldset>
+        <button type="submit">Enviar mensagem</button>
     </form>
 </body>
 

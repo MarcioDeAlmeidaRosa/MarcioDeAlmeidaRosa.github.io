@@ -4,13 +4,21 @@
     width: 60%;
 }
 
-.contato fieldset>fieldset {
-    display: inline;
+.contato fieldset {
     border: 0;
 }
 
+.contato fieldset>fieldset {
+    display: inline;
+}
+
 .contato input[name="nome"],
-.contato input[name="email"],
+.contato input[name="email"] {
+    width: calc(100% - 2em);
+    position: relative;
+    left: 2em;
+}
+
 .contato textarea {
     width: 100%;
 }
@@ -19,6 +27,33 @@
 .contato label[for="email"],
 .contato label[for="mensagem"] {
     display: block;
+}
+
+.contato #lNome,
+.contato #lEmail {
+    position: relative;
+}
+
+.contato #lNome:after,
+.contato #lEmail:after {
+    content: "";
+    position: absolute;
+    width: 2em;
+    height: 1.5em;
+    top: 100%;
+    left: 0;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.contato #lNome:after {
+    background-image: url(../img/usuario.png);
+}
+
+.contato #lEmail:after {
+    background-image: url(../img/email.png);
 }
 
 .contato textarea {
@@ -30,6 +65,9 @@
     right: 0;
     margin: 5px 0;
     font: inherit;
+    background-color: rgba(0, 0, 0, .8);
+    color: #FFF;
+    right: .7em;
 }
 
 .contato input[name="nome"]:invalid,

@@ -14,9 +14,9 @@
     <form>
         <fieldset>
             <legend><label for="nome">Dados do Contato</label></legend>
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome" autofocus required>
-            <label for="email">E-mail</label>
+            <label for="nome" id="lNome">Nome</label>
+            <input type="text" name="nome" id="nome" autofocus required pattern="[A-z '\u00C0-\u017e]{4,}" title="O nome precisa ter pelo menos 4 caracteres">
+            <label for="email" id="lEmail">E-mail</label>
             <input type="email" name="email" id="email" required>
         </fieldset>
         <fieldset>

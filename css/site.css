@@ -296,4 +296,9 @@ a:focus,
     text-align: center;
     font: inherit;
     top: -0.800em;
+    position: relative;
+    display: block;
+    float: left;
+    top: .3em;
+    width: 10em;
 }

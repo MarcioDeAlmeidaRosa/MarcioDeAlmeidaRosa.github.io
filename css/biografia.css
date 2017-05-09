@@ -3,19 +3,6 @@ section p:first-child::first-letter {
     margin-right: .1ch;
 }
 
-.imagem-direita {
-    float: right;
-}
-
-.imagem-esquerda {
-    float: left;
-}
-
-.imagem-esquerda figure,
-.imagem-direita figure {
-    width: 326px;
-}
-
 
 /*configurando tempo de abertura de imagem e tamanho máximo para dar o efeito zoom*/
 
@@ -52,12 +39,4 @@ figure:focus img {
 figure {
     width: 100%;
     text-align: center;
-}
-
-
-/*configuração do local onde vai a imagem*/
-
-.local-img img {
-    margin: 10px;
-    width: inherit;
 }

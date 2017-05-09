@@ -3,36 +3,38 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="viewport" content="width=device-width">
     <title>Portfolio Online Marcio de Almeida Rosa</title>
     <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Baloo|Josefin+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/site.css">
+    <link rel="stylesheet" type="text/css" href="css/responsivo.css">
 </head>
 
 <body class="body-principal">
     <header class="header-principal">
         <h1>Marcio de Almeida Rosa</h1>
-    </header>
-    <div class="conteudo-principal">
+        <button class="menu-abrir">Abrir menu</button>
         <div class="navegacao-site">
             <nav>
-                <ul>
-                    <li><a href="home.html" tabindex="1" target="conteudo" title="clique aqui para acessar a página home">Home</a></li>
-                    <li><a href="biografica.html" tabindex="1" target="conteudo" title="clique aqui para acessar a página sobre mim">Sobre mim</a></li>
-                    <li><a href="experiencias.html" tabindex="1" target="conteudo" title="clique aqui para acessar a página de experiências">Experiências</a></li>
-                    <li><a href="formacaoAcademica.html" tabindex="1" target="conteudo" title="clique aqui para acessar a página de formação">Formação</a></li>
-                    <li><a href="cursos.html" tabindex="1" target="conteudo" title="clique aqui para acessar a página dos cursos">Cursos</a></li>
-                    <li><a href="blog.html" tabindex="1" target="conteudo" title="clique aqui para acessar a página de blog">Blog</a></li>
-                    <li><a href="contato.html" tabindex="1" target="conteudo" title="clique aqui para acessar a página de contato">Contato</a></li>
+                <button class="menu-fechar">Fechar menu</button>
+                <ul class="itens-menu">
+                    <li><a class="click" href="home.html" tabindex="1" target="conteudo" title="clique aqui para acessar a página home">Home</a></li>
+                    <li><a class="click" href="biografica.html" tabindex="1" target="conteudo" title="clique aqui para acessar a página sobre mim">Sobre mim</a></li>
+                    <li><a class="click" href="experiencias.html" tabindex="1" target="conteudo" title="clique aqui para acessar a página de experiências">Experiências</a></li>
+                    <li><a class="click" href="formacaoAcademica.html" tabindex="1" target="conteudo" title="clique aqui para acessar a página de formação">Formação</a></li>
+                    <li><a class="click" href="cursos.html" tabindex="1" target="conteudo" title="clique aqui para acessar a página dos cursos">Cursos</a></li>
+                    <li><a class="click" href="blog.html" tabindex="1" target="conteudo" title="clique aqui para acessar a página de blog">Blog</a></li>
+                    <li><a class="click" href="contato.html" tabindex="1" target="conteudo" title="clique aqui para acessar a página de contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
-        <main class="main">
-            <iframe class="iFrame-temporario" name="conteudo" src="home.html"></iframe>
-        </main>
-    </div>
+    </header>
+    <main class="main">
+        <iframe class="iFrame-temporario" name="conteudo" id="conteudo" src="home.html"></iframe>
+    </main>
     <footer class="footer">
         <p>&copy; Marcio de Almeida Rosa 2017</p>
         <!--<div class="numero-visita" id="numero-de-visita" name="numero-de-visita">
@@ -48,6 +50,7 @@
             </ul>
         </nav>
     </footer>
+    <script src="js/responsivo.js"></script>
 </body>
 
 </html>
